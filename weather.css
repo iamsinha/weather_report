@@ -1,0 +1,80 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(135deg, #95abf8 0%, #6b7ff4 50%, #5126eb 50%, #250af5 100%);
+    background-size: 200% 200%;
+    animation: Gradient 3s ease infinite;
+}
+
+#weatherWidget {
+    width: 300px;
+    padding: 20px;
+    background-color: #ffffff;
+    border: 1px solid #ede9e9;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+select, input, button {
+    width: 95%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.hidden {
+    display: none;
+}
+
+@keyframes Gradient {
+    10% {
+        background-position: 5% 50%;
+    }
+    40% {
+        background-position: 100% 50%;
+    }
+    20% {
+        background-position: 20% 50%;
+    }
+}
+
+#recentSearches {
+    margin-top: 20px;
+}
+
+#recentSearches div {
+    padding: 5px;
+    border-bottom: 1px solid #ccc;
+}
+
+#recentSearches div:last-child {
+    border-bottom: none;
+}
+
+#errorMsg {
+    color: rgb(83, 10, 10);
+    margin-top: 10px;
+    text-align: center;
+}
